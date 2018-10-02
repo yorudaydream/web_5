@@ -5,31 +5,39 @@
 <title>Insert title here</title>
 <link type="text/css" rel="stylesheet" href="./css/reset.css">
 <style>
-<!-- 공통 시작 -->
-	a{text-decoration:none;}
-	ul li{list-style:none;}
-	.wrap {max-width:1440px !important; margin : 0 auto;}
-	.c_lightblue{color: #b4d0e7;}
-<!-- 공통 끝 -->
-<!-- header 시작 -->
-	header.header {width: 100%;	height: 90px; background: #d1d1d1; position: fixed; top:0;}
-	header.header .top_logo{float:left; height:90px; box-sizing: border-box;}
-	header.header .l_menu{float:left; height:90px; color: #fff;}
-	header.header .l_menu ul a{color:#fff;}
-	header.header .r_menu{float:right; height:90px;}
-	header.header .r_menu ul a{color: #000;}
-<!-- header 끝 -->
+/* 공통 시작 */
+a{text-decoration:none;}
+ul li{list-style:none;}
+.wrap {max-width:1440px; margin : 0 auto;}
+.c_lightblue{color: #b4d0e7;}
+span.b{font-weight:700;}
+/* 공통 끝 */
+/* header 시작 */
 
-<!-- main 시작 -->
-	section.main{width:100%;}
-	.first_content{min-height:890px; background: linear-gradient(90deg, #61082b 66.666%, #b4d0e7 33.334%);}
-	button.waypoint{background:url(https://cfl.dropboxstatic.com/static/images/index/rebrand/ob-arrow-aqua-vflrYQuro.svg);}
-	.first_content wrap h1{color: #b4d0e7;}
+header.header {width: 100%;	height: 90px;	background: #d1d1d1; position: fixed; top:0;}
+header.header .top_logo{float:left; height:90px; box-sizing: border-box; margin-right:20px;}
+header.header .top_logo img{margin-top:29px;}
+header ul a li{float:left; line-height:90px; margin: 0 15px;}
+header.header .l_menu{float:left; height:90px; color: #fff;}
+header.header .l_menu ul a{color:#fff;}
+header.header .r_menu{float:right; height:90px;}
+header.header .r_menu ul a{color: #000;}
+/* header 끝 */
 
+/* main 시작 */
+section.main{width:100%; margin-top:90px;}
+.first_content{min-height:890px; background: linear-gradient(90deg, #61082b 66.666%, #b4d0e7 33.334%);}
+.second_content{min-height:890px; background: linear-gradient(90deg, #61082b 66.666%, #b4d0e7 33.334%);}
+button.waypoint{background:url(https://cfl.dropboxstatic.com/static/images/index/rebrand/ob-arrow-aqua-vflrYQuro.svg);}
+.textContent{width:25%; display:inline-block; font-size:18px; line-height:28px;}
+.textContent_1{width:50%; display:inline-block; color:#fff; font-size:18px; line-height:28px;}
+.textContent_1 h1.t_title{font-size:71px; line-height: 1.11em; margin-bottom:50px;letter-spacing: -1px;}
+p.content_1{margin:10px 0;}
+.textContent>p{margin:10px 0;}
+/* main 끝 */
+/* footer 시작 */
+/* footer 끝 */
 
-<!-- main 끝 -->
-<!-- footer 시작 -->
-<!-- footer 끝 -->
 </style>
 </head>
 <body>
@@ -56,11 +64,27 @@
 	<section class="main">
 			<article class="first_content">
 				<div class="wrap">
-					<h1 class="c_lightblue">Dropbox로 업무에<br> 창의적인 에너지 활용</h1>
-					<p class="content_1">Dropbox는 바쁜 업무의 부담을 줄이고 중요한 업무에 주력할 수 있도록 디자인된 최신 작업 공간입니다.</p>
-					<button class="waypoint"></button>
+					<div class="textContent_1">
+						<h1 class="t_title c_lightblue"><span class="b">Dropbox</span>로 업무에<br> 창의적인 에너지 활용</h1>
+						<p class="content_1">Dropbox는 바쁜 업무의 부담을 줄이고 중요한<br> 업무에 주력할 수 있도록 디자인된 최신 <br>작업 공간입니다.</p>
+						<button class="waypoint"></button>
+					</div>
 				</div>
 			</article>
+			<section class="second_content">
+				<div class="wrap">
+					<div class="textContent">
+						<h2>업무 흐름을 유지하면서 모든 자료를 체계적으로 관리</h2>
+						<p>Dropbox를 사용하면 파일을 한 곳에서 편리하게 관리할 수 있습니다. 모든 장치에서 파일이 안전하게 동기화되고 쉽게 찾을 수 있으므로 언제 어디서나 액세스할 수 있습니다. 더 이상 자료를 찾느라 시간을 허비하지 않아도 됩니다.</p>
+					</div>
+					<div class="mediaContent">
+						<img src="./images/dropbox_digital_desktop_01-vflTDaJ3U.jpg" alt="1_lest">
+						<img src="./images/dropbox_digital_desktop_02-vflq-5NiU.jpg" alt="1_right">
+					</div>
+				</div>
+			</section>
+			<section class="third_content"></section>
+			<section class="fourth_content"></section>
 	</section>
 	<section class="right_side"></section>
 	<footer class="footer"></footer>
