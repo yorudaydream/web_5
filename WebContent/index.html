@@ -17,11 +17,11 @@ span.b{font-weight:700;}
 .wl_btn{background-color: #fff; color:#000;}
 .bl_btn{background: #0061ff; color:#fff;}
 .a_btn{padding:8px 50px 11px; vertical-align: middle; display:inline-block;}
-img{max-width:100%;}
+img{max-width:100%; height:auto;}
 /* 공통 끝 */
 /* header 시작 */
 
-header.header {width: 100%;	height: 90px;	background: #d1d1d1; position: fixed; top:0; z-index: 9999999;}
+header.header {width: 100%;	height: 90px;	background: rgba(0,0,0,0.1); position: fixed; top:0; z-index: 9999999;}
 header.header .top_logo{float:left; height:90px; box-sizing: border-box; margin-right:20px;}
 header.header .top_logo img{margin-top:29px;}
 header ul a li{float:left; line-height:90px; margin: 0 15px;}
@@ -44,7 +44,11 @@ p.content_1{margin:10px 0;}
 .t_title{font-size: 32px; line-height: 1.11em;}
 .mediaContent{width:58.5%; display:inline-block; vertical-align: middle;}
 .mediaContent img{float:left;}
-.second_content .mediaContent{margin-left:10.5%;}
+.second_content .textContent{float:left; margin-right:12.7%;}
+.second_content .mediaContent{width:100%; display:inline; max-height:570px; /*margin-left:9.5%; position:absolute; left: calc(1440px - 74.5%);*/}
+.ml{float:left; width:34%; max-width:480px;}
+.mr{float:left; width:25%; max-width:360px;}
+
 
 .third_content{min-height:890px; background: #ffafa2;}
 .third_content .t_title{color: #0d2481;}
@@ -117,8 +121,12 @@ footer .site_l{padding:40px 0; font-size:14px;}
 						<p>Dropbox를 사용하면 파일을 한 곳에서 편리하게 관리할 수 있습니다. 모든 장치에서 파일이 안전하게 동기화되고 쉽게 찾을 수 있으므로 언제 어디서나 액세스할 수 있습니다. 더 이상 자료를 찾느라 시간을 허비하지 않아도 됩니다.</p>
 					</div>
 					<div class="mediaContent">
-						<img src="./images/dropbox_digital_desktop_01-vflTDaJ3U.jpg" alt="1_lest">
-						<img src="./images/dropbox_digital_desktop_02-vflq-5NiU.jpg" alt="1_right">
+						<div class="ml">
+							<img src="./images/dropbox_digital_desktop_01-vflTDaJ3U.jpg" alt="1_lest">
+						</div>
+						<div class="mr">
+							<img src="./images/dropbox_digital_desktop_02-vflq-5NiU.jpg" alt="1_right">
+						</div>
 					</div>
 				</div>
 			</section>
@@ -167,11 +175,11 @@ footer .site_l{padding:40px 0; font-size:14px;}
 		<ul class="f_list">
 			<li class="category"><span class="b">Dropbox</span>
 				<ul class="l_name">
-					<a href=""><li class="l_sub">데스크톱 앱</li></a>
-					<a href=""><li class="l_sub">모바일 앱</li></a>
-					<a href=""><li class="l_sub">요금제</li></a>
-					<a href=""><li class="l_sub">보안</li></a>
-					<a href=""><li class="l_sub">특징</li></a>					
+					<a href="#"><li class="l_sub">데스크톱 앱</li></a>
+					<a href="#"><li class="l_sub">모바일 앱</li></a>
+					<a href="#"><li class="l_sub">요금제</li></a>
+					<a href="#"><li class="l_sub">보안</li></a>
+					<a href="#"><li class="l_sub">특징</li></a>					
 				</ul>	
 			</li>
 			<li class="category">제품
@@ -214,4 +222,7 @@ footer .site_l{padding:40px 0; font-size:14px;}
 		</div>
 	</footer>
 </body>
+
+
 </html>
+
