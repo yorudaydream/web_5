@@ -13,9 +13,11 @@ ul li{list-style:none;}
 span.b{font-weight:700;}
 .pt50{padding-top:50px; box-sizing: border-box;}
 .pt11p{padding-top:11%; box-sizing: border-box;}
+.mt10p{margin-top:10%; box-sizing: border-box;}
 .wl_btn{background-color: #fff; color:#000;}
+.bl_btn{background: #0061ff; color:#fff;}
 .a_btn{padding:8px 50px 11px; vertical-align: middle; display:inline-block;}
-
+img{max-width:100%;}
 /* 공통 끝 */
 /* header 시작 */
 
@@ -30,12 +32,12 @@ header.header .r_menu ul a{color: #000;}
 /* header 끝 */
 
 /* main 시작 */
-section.main{width:100%; margin-top:90px;}
+section.main{width:100%; /*margin-top:90px;*/}
 .first_content{min-height:890px; background: linear-gradient(90deg, #61082b 66.666%, #b4d0e7 33.334%);}
 .second_content{min-height:890px; background: linear-gradient(90deg, #61082b 66.666%, #b4d0e7 33.334%);}
 button.waypoint{background:url(https://cfl.dropboxstatic.com/static/images/index/rebrand/ob-arrow-aqua-vflrYQuro.svg);}
 .textContent{width:26%; display:inline-block; font-size:18px; line-height:28px; color:#fff;vertical-align: middle;}
-.textContent_1{width:50%; display:inline-block; color:#fff; font-size:18px; line-height:28px; margin-top: 16%;}
+.textContent_1{width:50%; display:inline-block; color:#fff; font-size:18px; line-height:28px; margin-top: 25%;}
 .textContent_1 h1.t_title{font-size:71px; line-height: 1.11em; margin-bottom:50px;letter-spacing: -1px;}
 p.content_1{margin:10px 0;}
 .textContent>p{margin:20px 0;}
@@ -54,8 +56,24 @@ p.content_1{margin:10px 0;}
 .fourth_content .mediaContent{margin-left:10.5%;}
 .fourth_content .textContent p{margin-top:20px;}
 .fourth_content .a_btn{margin-top:30px;}
+
+.fifth_content{min-height:500px;}
+.fifth_content .textContent{width:49%;}
+.fifth_content .t_title{color: #000;}
+
+
 /* main 끝 */
 /* footer 시작 */
+footer{width:100%; hegiht:auto; background: #000; color:#fff; box-sizing:border-box;}
+footer .f_list{display:flex; padding:150px 0 120px;}
+footer ul li{color:#fff;}
+footer>div>ul>li{display: inline-block; width:20%;}
+footer ul li.category{font-size:20px;}
+footer ul li ul.l_name{padding-top:20px;}
+footer ul li ul li.l_sub{padding:10px 0; font-size: 14px; font-weight: 400;}
+footer hr{width:20%; display: inline-block;}
+footer .site_l{padding:40px 0; font-size:14px;}
+
 /* footer 끝 */
 
 </style>
@@ -131,18 +149,69 @@ p.content_1{margin:10px 0;}
 			</section>
 			<section class="fifth_content">
 				<div class="wrap">
+					<div class="pt11p"></div>
 					<div class="textContent">
-						<h1 class="t_title"></h1>
-						<a href="" class="a_btn bl_btn"></a>
+						<h1 class="t_title">프리랜서 및 단독 작업자용</h1>
+						<a href="" class="a_btn bl_btn mt10p">Dropbox 받기</a>
 					</div>
 					<div class="textContent">
-						<h1 class="t_title"></h1>
-						<a href="" class="a_btn bl_btn"></a>
+						<h1 class="t_title">모든 규모의 팀 및 비즈니스용</h1>
+						<a href="" class="a_btn bl_btn mt10p">Dropbox Business 받기</a>
 					</div>
 				</div>
 			</section>
 	</section>
 	<section class="right_side"></section>
-	<footer class="footer"></footer>
+	<footer class="footer">
+		<div class="wrap">
+		<ul class="f_list">
+			<li class="category"><span class="b">Dropbox</span>
+				<ul class="l_name">
+					<a href=""><li class="l_sub">데스크톱 앱</li></a>
+					<a href=""><li class="l_sub">모바일 앱</li></a>
+					<a href=""><li class="l_sub">요금제</li></a>
+					<a href=""><li class="l_sub">보안</li></a>
+					<a href=""><li class="l_sub">특징</li></a>					
+				</ul>	
+			</li>
+			<li class="category">제품
+				<ul class="l_name">
+					<a href=""><li class="l_sub">Plus</li></a>
+					<a href=""><li class="l_sub">Professional</li></a>
+					<a href=""><li class="l_sub">Business</li></a>
+					<a href=""><li class="l_sub">Enterprise</li></a>					
+				</ul>
+			</li>
+			<li class="category">회사
+				<ul class="l_name">
+					<a href=""><li class="l_sub">회사 소개</li></a>
+					<a href=""><li class="l_sub">채용정보</li></a>
+					<a href=""><li class="l_sub">언론</li></a>
+					<a href=""><li class="l_sub">투자자 관계</li></a>
+					<a href=""><li class="l_sub">블로그</li></a>					
+				</ul>
+			</li>
+			<li class="category">지원
+				<ul class="l_name">
+					<a href=""><li class="l_sub">도움말 센터</li></a>
+					<a href=""><li class="l_sub">문의하기</li></a>
+					<a href=""><li class="l_sub">쿠키</li></a>
+					<a href=""><li class="l_sub">개인정보 보호정책 및 이용 약관</li></a>			
+				</ul>
+			</li>
+			<li class="category">커뮤니티
+				<ul class="l_name">
+					<a href=""><li class="l_sub">개발자</li></a>
+					<a href=""><li class="l_sub">추천</li></a>
+					<a href=""><li class="l_sub">포럼</li></a>				
+				</ul>
+			</li>
+		</ul>
+		<hr>
+		<ul class="site_l">
+			<a href=""><li class="language">한국어</li></a>
+		</ul>
+		</div>
+	</footer>
 </body>
 </html>
