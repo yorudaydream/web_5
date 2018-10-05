@@ -35,20 +35,21 @@ header.header .r_menu ul a{color: #000;}
 section.main{width:100%; /*margin-top:90px;*/}
 .first_content{min-height:890px; background: linear-gradient(90deg, #61082b 66.666%, #b4d0e7 33.334%);}
 .second_content{min-height:890px; background: linear-gradient(90deg, #61082b 66.666%, #b4d0e7 33.334%);}
-button.waypoint{background:url(https://cfl.dropboxstatic.com/static/images/index/rebrand/ob-arrow-aqua-vflrYQuro.svg);}
+button.waypoint{width: 23px;height: 37px; background:url(./images/20181005_103520.png); border: none; margin-top:40px;}
 .textContent{width:26%; display:inline-block; font-size:18px; line-height:28px; color:#fff;vertical-align: middle;}
-.textContent_1{width:50%; display:inline-block; color:#fff; font-size:18px; line-height:28px; margin-top: 25%;}
+.textContent_1{width:50%; display:inline-block; color:#fff; font-size:18px; line-height:28px; margin-top: 25%;padding-left: calc(1440px * (2 / 24));padding-right: calc(1440px * (2 / 24));}
 .textContent_1 h1.t_title{font-size:71px; line-height: 1.11em; margin-bottom:50px;letter-spacing: -1px;}
 p.content_1{margin:10px 0;}
 .textContent>p{margin:20px 0;}
 .t_title{font-size: 32px; line-height: 1.11em;}
 .mediaContent{width:58.5%; display:inline-block; vertical-align: middle;}
 .mediaContent img{float:left;}
-.second_content .textContent{float:left; margin-right: 11.5rem;}
+.second_content .textContent{float:left; width: 21.3%; padding-left: calc(1440px * (1 / 24)); padding-right: calc(1440px * (3.15 / 24));}
 .second_content .mediaContent{width:100%; display:inline; max-height:570px; /*margin-left:9.5%; position:absolute; left: calc(1440px - 74.5%);*/}
-.ml{float:left; width:34%; max-width:480px;}
-.mr{float:left; width:25%; max-width:360px;}
-
+.ml{float:left; width: calc(8/24 * 100%);max-width: calc(1440px / (8/24));/*width:34%; max-width:480px;*/}
+.ml p.remark{position: absolute; transform: rotate(270deg) translateX(-100%) translateY(-35%); display: inline-block; transform-origin: left bottom; font-size: 10px; color: #fff;}
+.mr{float:left; width: calc(6/24 * 100%);max-width: calc(1440px / (6/24));/*width:25%; max-width:360px;*/}
+.mr p.remark{width:200px; transform: rotate(270deg) translateX(7%); margin-left: calc(8px + 100%); display: inline-block; transform-origin: left top; font-size: 10px; color: #000;}
 
 .third_content{min-height:890px; background: #ffafa2;}
 .third_content .t_title{color: #0d2481;}
@@ -122,10 +123,12 @@ footer .site_l{padding:40px 0; font-size:14px;}
 					</div>
 					<div class="mediaContent">
 						<div class="ml">
+							<p class="remark">David McLeod 그림</p>
 							<img src="./images/dropbox_digital_desktop_01-vflTDaJ3U.jpg" alt="1_lest">
 						</div>
 						<div class="mr">
 							<img src="./images/dropbox_digital_desktop_02-vflq-5NiU.jpg" alt="1_right">
+							<p class="remark">Davy Evans 사진</p>
 						</div>
 					</div>
 				</div>
